@@ -111,19 +111,19 @@ const onFinishFailed = (errorInfo) => {
       <Input />
     </Form.Item>
      <Form.Item
-      label="内容Xpath"
+      label="小说本体DOM，使用JQ语法，比如#content"
       name="content"
       rules={[
         {
           required: true,
-          message: '小说内容Xpath',
+          message: '小说内容DOM',
         },
       ]}
     >
       <Input />
     </Form.Item>
      <Form.Item
-      label="章节标题Xpath"
+      label="章节标题DOM,比如.detail_info h1"
       name="title"
       rules={[
         {
@@ -135,7 +135,7 @@ const onFinishFailed = (errorInfo) => {
       <Input />
     </Form.Item>
      <Form.Item
-      label="下一页Xpath"
+      label="下一页DOM 比如.textinfo span:nth-child(4) a"
       name="nextPage"
       rules={[
         {
