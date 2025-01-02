@@ -111,8 +111,9 @@ const onFinishFailed = (errorInfo) => {
       <Input />
     </Form.Item>
      <Form.Item
-      label="小说本体DOM，使用JQ语法，比如#content"
+      label="小说本体DOM"
       name="content"
+      
       rules={[
         {
           required: true,
@@ -120,11 +121,12 @@ const onFinishFailed = (errorInfo) => {
         },
       ]}
     >
-      <Input />
+      <Input placeholder="小说本体DOM，使用JQ语法，比如#content" />
     </Form.Item>
      <Form.Item
-      label="章节标题DOM,比如.detail_info h1"
+      label="章节标题DOM"
       name="title"
+      
       rules={[
         {
           required: true,
@@ -132,11 +134,12 @@ const onFinishFailed = (errorInfo) => {
         },
       ]}
     >
-      <Input />
+      <Input placeholder="章节标题DOM,比如.detail_info h1" />
     </Form.Item>
      <Form.Item
-      label="下一页DOM 比如.textinfo span:nth-child(4) a"
+      label="下一页DOM"
       name="nextPage"
+      
       rules={[
         {
           required: true,
@@ -144,11 +147,12 @@ const onFinishFailed = (errorInfo) => {
         },
       ]}
     >
-      <Input />
+      <Input placeholder="下一页DOM 比如.textinfo span:nth-child(4) a" />
     </Form.Item>
      <Form.Item
       label="终止标记"
       name="breakFlag"
+      
       rules={[
         {
           required: true,
@@ -156,7 +160,7 @@ const onFinishFailed = (errorInfo) => {
         },
       ]}
     >
-      <Input />
+      <Input placeholder="终止标记默认html" />
     </Form.Item>
     
     
