@@ -150,17 +150,17 @@ const onFinishFailed = (errorInfo) => {
       <Input placeholder="下一页DOM 比如.textinfo span:nth-child(4) a" />
     </Form.Item>
      <Form.Item
-      label="终止标记"
+      label="终止网址"
       name="breakFlag"
       
       rules={[
         {
           required: true,
-          message: '终止标记',
+          message: '终止网址',
         },
       ]}
     >
-      <Input placeholder="终止标记默认html" />
+      <Input placeholder="最后一章下一页网址，一般是目录页网址" />
     </Form.Item>
     
     

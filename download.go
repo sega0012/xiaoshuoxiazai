@@ -130,7 +130,7 @@ func (xs *XzInfo) xsxzcolly() {
 
 	for {
 		c.Visit(page_url)
-		if nexturl[len(nexturl)-4:] != xs.BreakFlag {
+		if xs.HeadUrl+nexturl == xs.BreakFlag {
 			break
 		} else {
 			page_url = xs.HeadUrl + nexturl
